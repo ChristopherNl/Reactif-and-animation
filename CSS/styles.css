@@ -18,7 +18,7 @@
 
 body {background-color: rgb(245, 245, 245);}
 
-footer {background-color: rgb(220, 220, 220);}
+footer{background-color: rgb(220, 220, 220);}
 
 
 /**
@@ -31,10 +31,30 @@ footer {background-color: rgb(220, 220, 220);}
 header{
     display: flex;
     flex-direction: column;
+   
+    
 
 }
+header h1{
+    text-align: center;
+}
+
+#section-1{
+    height: 100vh;
+}
  
- 
+ img{
+    margin-top: 50px;
+    width: 400px;
+ }
+ @media (max-width:400px){
+    img{
+        width: 400px;
+        
+
+     }
+
+}
 
  #section-1 div {
     box-shadow: -1px 1px 10px 3px inset;
@@ -44,11 +64,57 @@ header{
 
 }
 
-#section-2 div{
-    box-shadow: -1px 1px 10px 3px inset;
+#section-2{
+    height: 100vh;
     font-size: 30px;
+    text-align: center;
+    line-height: 150px;
+ 
+}
+
+#section-2 div div div{
+    box-shadow:-1px 1px 10px 3px  inset;
+    width: 150px;
+    height: 150px;
+     border-radius:50%;
+     margin: 15px;
+     
+     
+}
+#grid{
    
-    border-radius: 5 0%/50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+}
+
+#footer{
+    height: 200px;
+   width: auto;
+    font-size: 30px;
+    text-align:center;
+    
+    
 
 }
 
+@media screen and (orientation: landscape){
+  
+    #section-1 {
+        display: inline;
+       flex-direction: row-reverse;
+        width: 300px;
+        height: 300px;
+    }
+    .div picture{
+        align-items: center;
+        width: 454px;
+        left: 667px;
+    }
+
+
+}
+
+
+    
