@@ -29,46 +29,54 @@ footer{background-color: rgb(220, 220, 220);}
  * ...
  */
 header{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-   
-    
-
+    justify-content: center;
+    align-items: center;
 }
 header h1{
     text-align: center;
 }
+ header img{
+    
+    width:100%;
+ }
 
 #section-1{
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
  
- img{
-    margin-top: 50px;
-    width: 400px;
- }
- @media (max-width:400px){
-    img{
-        width: 400px;
-        
-
+ header img{
+        width: 300px;
      }
 
-}
 
  #section-1 div {
     box-shadow: -1px 1px 10px 3px inset;
     margin: 15px;
     width: 300px;
     height: 300px;
-
+}
+#section-1 div img{
+    width: 100%;
 }
 
+
 #section-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     height: 100vh;
+    width: 100%;
     font-size: 30px;
     text-align: center;
     line-height: 150px;
+  
  
 }
 
@@ -82,39 +90,47 @@ header h1{
      
 }
 #grid{
-   
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    width: 100%;
+   justify-content: center;
    
 }
 
-#footer{
+#footer{ 
     height: 200px;
-   width: auto;
+    width: auto;
     font-size: 30px;
     text-align:center;
-    
-    
-
 }
 
-@media screen and (orientation: landscape){
+
+@media screen and (max-width:400px) (orientation: landscape) {
   
     #section-1 {
-        display: inline;
-       flex-direction: row-reverse;
-        width: 300px;
-        height: 300px;
+        display: flex;
+       flex-direction: row;
+       align-items: center;
+      
     }
     .div picture{
         align-items: center;
         width: 454px;
-        left: 667px;
+        right: 667px;
     }
-
+    #section-2 {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    
+    
+    }    
 
 }
+
+@media (max-width:400px) {h1  :nth-child(2){display: none}h1 :nth-child(5){display: none;} h1 :nth-child(3){display: none;}
+}
+
 
 
     
