@@ -128,6 +128,30 @@ header h1{
 #grid div{
     transition-duration: 0.5s;
 }
+@media (min-width:1200px){
+    h1 :nth-child(2) {display:contents}
+    h1 :nth-child(3) {display: contents;}
+    }
+    #grid div:first-child:not(div:only-child){
+        grid-area: 1 / 3 / 1 / 4;
+    }
+    #grid div:nth-child(2):not(div:only-child){
+      grid-area: 2 / 2 / 2 / 3;
+    }
+    #grid div:nth-child(3):not(div:only-child){
+      grid-area: 2 / 4 / 2 / 5;
+    }
+    #grid div:nth-child(4):not(div:only-child){
+      grid-row-start: 3;
+      grid-row-end: 3;
+    }
+    #grid div:nth-child(5):not(div:only-child){
+      grid-area: 3 / 3 / 3 / 4;
+    }
+    #grid div:nth-child(6):not(div:only-child){
+       grid-area: 3 / 5 / 3 / 6;
+    }
+
 
 @media screen and (max-width:400px) (orientation: landscape) {
   
@@ -244,29 +268,6 @@ header h1{
     }
 }
 
-@media (min-width:1200px){
-    h1 :nth-child(2) {display:contents}
-    h1 :nth-child(3) {display: contents;}
-    }
-    #grid div:first-child:not(div:only-child){
-        grid-area: 1 / 3 / 1 / 4;
-    }
-    #grid div:nth-child(2):not(div:only-child){
-      grid-area: 2 / 2 / 2 / 3;
-    }
-    #grid div:nth-child(3):not(div:only-child){
-      grid-area: 2 / 4 / 2 / 5;
-    }
-    #grid div:nth-child(4):not(div:only-child){
-      grid-row-start: 3;
-      grid-row-end: 3;
-    }
-    #grid div:nth-child(5):not(div:only-child){
-      grid-area: 3 / 3 / 3 / 4;
-    }
-    #grid div:nth-child(6):not(div:only-child){
-       grid-area: 3 / 5 / 3 / 6;
-    }
 
 
    
